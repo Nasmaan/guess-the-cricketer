@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Guessing Game - Spotle Style</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+    <div class="container">
+        <div id="game-container" class="card z-depth-3">
+            <h1 class="center-align">Cricket Guessing Game</h1>
+            <div id="score-container" class="center-align">
+                <div class="score-box">
+                    <h5>Attempts: <span id="attempts">0</span>/10</h5>
+                </div>
+            </div>
+            <div id="input-container" class="card-content">
+                <div class="input-field">
+                    <input type="text" id="guess" placeholder="Enter cricketer's name" oninput="showSuggestions()">
+                </div>
+                <div id="suggestions" class="collection"></div>
+                <button id="submit-button" onclick="checkGuess()" class="btn waves-effect waves-light">Submit</button>
+            </div>
+            <div id="feedback-container" class="card-content center-align">
+                <ul id="feedback-list" class="collection"></ul>
+            </div>
+            <div id="result-container" class="card-action center-align">
+                <p id="result"></p>
+                <p id="come-back-message" class="hidden">Please come back tomorrow!</p>
+                <button id="restart-button" onclick="restartGame()" class="btn waves-effect waves-light">Restart</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
