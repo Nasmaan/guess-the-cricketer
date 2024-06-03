@@ -1,0 +1,100 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    color: #00796b;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#game-container {
+    width: 90%;
+    max-width: 600px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+}
+
+.score-box {
+    background-color: #ffeb3b;
+    border-radius: 8px;
+    padding: 10px;
+    display: inline-block;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.score-box h5 {
+    margin: 0;
+    font-weight: 400;
+    color: #ff5722;
+    font-size: 24px;
+}
+
+#input-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+#suggestions {
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    max-height: 150px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+#suggestions .collection-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+#suggestions .collection-item:hover {
+    background-color: #f0f0f0;
+}
+
+#feedback-container {
+    margin-top: 20px;
+}
+
+#feedback-list .collection-item {
+    text-align: left;
+}
+
+#result-container {
+    margin-top: 20px;
+}
+
+#restart-button {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.btn {
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #004d40;
+}
